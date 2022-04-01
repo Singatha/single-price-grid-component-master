@@ -1,0 +1,150 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 62%, 50%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+    --fs: 16px;
+    --ff: "Karla";
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+*, *::before, *::after {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    max-width: 330px;
+    width: 100%;
+}
+
+.white-section {
+    background-color: var(--white);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 30px;
+}
+
+.white-section h3 {
+    color: var(--cyan);
+    font-family: var(--ff);
+    margin: 0 0 15px;
+}
+
+.white-section h4 {
+    color: var(--bright-yellow);
+    font-family: var(--ff);
+    margin: 0 0 15px;
+}
+
+.white-section p {
+    color: var(--grayish-blue);
+    font-family: var(--ff);
+}
+
+.cyan-section {
+    background-color: var(--cyan);
+    padding: 30px 30px 20px;
+}
+
+.cyan-section h3 {
+    color: var(--white);
+    font-family: var(--ff);
+    margin: 0 0 15px;
+}
+
+.cyan-section p {
+    color: var(--light-gray);
+    font-family: var(--ff);
+}
+
+.cyan-section .price {
+    font-size: 25px;
+    font-weight: var(--fw-700);
+    margin: 0 0 15px;
+}
+
+.cyan-section span {
+    color: var(--light-cyan);
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0 0 0 10px;
+}
+
+.cyan-section button {
+    background-color: var(--bright-yellow);
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    color: var(--light-gray);
+    font-family: var(--ff);
+    margin: 25px 0 0;
+    padding: 14px;
+    width: 260px;
+}
+
+.light-cyan-section {
+    background-color: var(--light-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px;
+}
+
+.light-cyan-section h3 {
+    color: var(--white);
+    font-family: var(--ff);
+    margin: 0 0 15px;
+}
+
+.light-cyan-section p {
+    color: var(--light-gray);
+    font-family: var(--ff);
+    font-weight: var(--fw-400);
+}
+
+@media  screen and (min-width: 800px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .white-section {
+        padding: 40px 30px;
+    }
+
+    .white-section h3 {
+        font-size: 22px;
+    }
+
+    .cyan-section {
+        border-bottom-left-radius: 10px;
+    }
+
+    .cyan-section button {
+        width: 250px;
+    }
+
+    .light-cyan-section {
+        border-bottom-left-radius: 0;
+        flex-grow: 1;
+    }
+}
