@@ -29,65 +29,65 @@ body {
     justify-content: center;
 }
 
-.container {
+.price-grid-component {
     max-width: 330px;
     width: 100%;
 }
 
-.white-section {
+.price-grid-component__body--white {
     background-color: var(--white);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 30px;
 }
 
-.white-section h3 {
+.price-grid-component__title--cyan {
     color: var(--cyan);
     font-family: var(--ff);
     margin: 0 0 15px;
 }
 
-.white-section h4 {
+.price-grid-component__subtitle--yellow {
     color: var(--bright-yellow);
     font-family: var(--ff);
     margin: 0 0 15px;
 }
 
-.white-section p {
+.price-grid-component__text--gray {
     color: var(--grayish-blue);
     font-family: var(--ff);
 }
 
-.cyan-section {
+.price-grid-component__body--cyan {
     background-color: var(--cyan);
     padding: 30px 30px 20px;
 }
 
-.cyan-section h3 {
+.price-grid-component__title--white {
     color: var(--white);
     font-family: var(--ff);
     margin: 0 0 15px;
 }
 
-.cyan-section p {
+.price-grid-component__text {
     color: var(--light-gray);
     font-family: var(--ff);
 }
 
-.cyan-section .price {
+.price-grid-component__text--price {
     font-size: 25px;
     font-weight: var(--fw-700);
     margin: 0 0 15px;
 }
 
-.cyan-section span {
+.price-grid-component__text--cyan {
     color: var(--light-cyan);
     font-weight: normal;
     font-size: 15px;
     margin: 0 0 0 10px;
 }
 
-.cyan-section button {
+.price-grid-component__btn {
     background-color: var(--bright-yellow);
     border-radius: 8px;
     border: none;
@@ -99,51 +99,51 @@ body {
     width: 260px;
 }
 
-.light-cyan-section {
+.price-grid-component__body--light-cyan {
     background-color: var(--light-cyan);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 30px;
 }
 
-.light-cyan-section h3 {
+.price-grid-component__title--white {
     color: var(--white);
     font-family: var(--ff);
     margin: 0 0 15px;
 }
 
-.light-cyan-section p {
+.price-grid-component__text-item {
     color: var(--light-gray);
     font-family: var(--ff);
     font-weight: var(--fw-400);
 }
 
 @media  screen and (min-width: 800px) {
-    .container {
+    .price-grid-component {
         max-width: 600px;
     }
 
-    .row {
+    .price-grid-component__body-row {
         display: flex;
     }
 
-    .white-section {
+    .price-grid-component__body--white {
         padding: 40px 30px;
     }
 
-    .white-section h3 {
+    .price-grid-component__title--cyan {
         font-size: 22px;
     }
 
-    .cyan-section {
+    .price-grid-component__body--cyan {
         border-bottom-left-radius: 10px;
     }
 
-    .cyan-section button {
+    .price-grid-component__btn {
         width: 250px;
     }
 
-    .light-cyan-section {
+    .price-grid-component__body--light-cyan {
         border-bottom-left-radius: 0;
         flex-grow: 1;
     }
